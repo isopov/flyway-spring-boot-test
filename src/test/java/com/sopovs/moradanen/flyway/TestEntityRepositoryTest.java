@@ -12,7 +12,7 @@ import com.sopovs.moradanen.flyway.domain.TestEntity;
 import com.sopovs.moradanen.flyway.repositories.TestEntityRepository;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = AdminShopApplication.class)
+@ContextConfiguration(classes = FlywaySpringBootTestApplication.class)
 public class TestEntityRepositoryTest {
 
 	@Autowired

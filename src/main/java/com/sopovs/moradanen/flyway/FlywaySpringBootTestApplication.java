@@ -21,7 +21,7 @@ import com.sopovs.moradanen.flyway.repositories.TestEntityRepository;
 @EnableAutoConfiguration
 @ComponentScan
 @EnableTransactionManagement
-public class AdminShopApplication implements CommandLineRunner {
+public class FlywaySpringBootTestApplication implements CommandLineRunner {
 
 	@Autowired
 	private EntityManagerFactory emf;
@@ -39,7 +39,7 @@ public class AdminShopApplication implements CommandLineRunner {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication app = new SpringApplication(AdminShopApplication.class);
+		SpringApplication app = new SpringApplication(FlywaySpringBootTestApplication.class);
 		app.setAdditionalProfiles("bootstrap");
 		app.run(args);
 	}
